@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home | Caz Dev</title>
+    <meta name="author" content="cazdev" />
+    <meta name="keywords" content="Caz Dev, Software, Caz, Dev, Chaz Lambrechtsen, Chaz, Lambrechtsen" />
+    <meta name="description" content="Caz Dev - Software Engineering Student & Software Developer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	
+	<script> 
+	 /*
+     ----------------------------------------------------------------------
+     Colour Scheme
+     ----------------------------------------------------------------------
+     */
+	const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+	const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+
+	if(isDarkMode) activateDarkMode();
+		
+	function activateDarkMode() {
+		window.location.replace("https://dark.caz-dev.com/");
+	}
+	</script>
+	
+    <!-- Font Awesome -->
+    <link type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Libs CSS -->
+    <link type="text/css" media="all" href="assets/boostrap-files/css/bootstrap.css" rel="stylesheet" />
+    <!-- Animate CSS -->
+    <link type="text/css" media="all" href="assets/css/animate.css" rel="stylesheet" />
+    <!-- Template CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+    <!-- Style-->
+    <link type="text/css" media="all" href="assets/css/style.css" rel="stylesheet" />
+    <!-- Colour CSS -->
+    <link href="assets/css/colour-scheme/color-blue.css" rel="stylesheet" type="text/css" data-color="color-blue" media="all" id="stylesheet-new">
+    <!-- Responsive CSS -->
+    <link type="text/css" media="all" href="assets/css/respons.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Preload loading icon-->
+    <img src="./assets/img/favicons/favicon.png" width="0" height="0"  style="display: block;"/>
+    <img src="./assets/img/menu/profile.gif" width="0" height="0"  style="display: block;"/>
+    <img src="./assets/img/menu/resume.gif" width="0" height="0"  style="display: block;"/>
+    <img src="./assets/img/menu/portfolio.gif" width="0" height="0"  style="display: block;"/>
+    <img src="./assets/img/menu/blog.gif" width="0" height="0"  style="display: block;"/>
+    <img src="./assets/img/menu/contact.gif" width="0" height="0"  style="display: block;"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicons/favicon.png" />
+
+</head>
+
+<body>
+    <!-- Load page -->
+    <div class="animationload">
+        <div class="LoaderInside"></div>
+        <div class="loader">
+            <div class="lds-css ng-scope">
+                <div style="width:100%;height:100%" class="lds-disk">
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <style type="text/css">
+                    @keyframes lds-disk {
+                        0% {
+                            -webkit-transform: rotate(0deg);
+                            transform: rotate(0deg);
+                        }
+                        100% {
+                            -webkit-transform: rotate(360deg);
+                            transform: rotate(360deg);
+                        }
+                    }
+                    
+                    @-webkit-keyframes lds-disk {
+                        0% {
+                            -webkit-transform: rotate(0deg);
+                            transform: rotate(0deg);
+                        }
+                        100% {
+                            -webkit-transform: rotate(360deg);
+                            transform: rotate(360deg);
+                        }
+                    }
+                    
+                    .lds-disk {
+                        position: relative;
+                    }
+                    
+                    .lds-disk>div div:nth-child(1) {
+                        position: absolute;
+                        top: 2px;
+                        left: 2px;
+                        width: 196px;
+                        height: 196px;
+                        border-radius: 50%;
+                        background: #80bbff;
+                    }
+                    
+                    .lds-disk>div div:nth-child(2) {
+                        position: absolute;
+                        top: 15.719999999999999px;
+                        left: 76.48px;
+                        width: 47.04px;
+                        height: 47.04px;
+                        border-radius: 50%;
+                        background: #ffffff;
+                        -webkit-animation: lds-disk 0.7s linear infinite;
+                        animation: lds-disk 0.7s linear infinite;
+                        -webkit-transform-origin: 23.52px 84.28px;
+                        transform-origin: 23.52px 84.28px;
+                    }
+                    
+                    .lds-disk {
+                        width: 90px !important;
+                        height: 90px !important;
+                        -webkit-transform: translate(-45px, -45px) scale(0.45) translate(45px, 45px);
+                        transform: translate(-45px, -45px) scale(0.45) translate(45px, 45px);
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+    <!-- End load page -->
+
+    <div id="wraper">
+
+        <!-- Start Home-header section -->
+        <section class="home-header border-bottom padding-block">
+            <!-- start container -->
+            <div class="container">
+                <!-- start row -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 col-lg-5 text-right">
+                        <!-- Your foto -->
+                        <div class="foto">
+                            <!-- for man -->
+                            <img src="./assets/img/photo.png" alt="Photo">
+                            <!-- for women -->
+                            <!-- <img src="./assets/img/photo_female.png" alt="Photo"> -->
+                        </div>
+                        <!-- end your foto -->
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-lg-7">
+                        <!-- Your Name -->
+                        <h1 class="title">Chaz L.</h1>
+                        <!-- Your Profession -->
+                        <h3 class="sub-title">Software Engineering Student & Developer</h3>
+                        <!-- social icon -->
+                        <div class="social">
+                            <ul class="animated" data-animation="fadeIn" data-animation-delay="600">
+                                <!-- social icons -->
+                                <li><a class="ukie-icons hover-animate" href="http://www.linkedin.com/in/chaz-lambrechtsen"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a class="ukie-icons hover-animate" href="http://github.com/cazdev"><i class="fa fa-github-alt"></i></a></li>
+                                <li><a class="ukie-icons hover-animate" href="https://twitter.com/chaz6cl"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- end social icon -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- End Home-header section -->
+
+        <!-- Start Menu section -->
+        <nav class="menu">
+            <!-- start container -->
+            <div class="container">
+                <!-- start row -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-lg-12">
+
+                        <!-- start menu block (profile) -->
+
+                        <a href="profile.html" class="menu-li">
+                            <span class="foto">
+                                <img id=img-profile onmouseover="gifImgProfile()" onmouseout="normalImgProfile()" src="./assets/img/menu/profile.png" alt="Profile" />
+                            </span>
+                            <span class="name">Profile</span>
+                        </a>
+
+                        <!-- end menu block (profile) -->
+
+                        <script>
+                            function gifImgProfile() {
+                                document.getElementById("img-profile").src = "./assets/img/menu/profile.gif";
+                            }
+
+                            function normalImgProfile() {
+                                document.getElementById("img-profile").src = "./assets/img/menu/profile.png";
+                            }
+                        </script>
+
+
+                        <!-- start menu block (resume) -->
+                        <a href="resume.html" class="menu-li">
+                            <!-- img menu block -->
+                            <span class="foto">
+                                <img id=img-resume onmouseover="gifImgResume()" onmouseout="normalImgResume()" src="./assets/img/menu/resume.png" alt="Resume" />
+                            </span>
+                            <!-- name menu block -->
+                            <span class="name">Resume</span>
+                        </a>
+                        <!-- end menu block (resume) -->
+
+                        <script>
+                            function gifImgResume() {
+                                document.getElementById("img-resume").src = "./assets/img/menu/resume.gif";
+                            }
+
+                            function normalImgResume() {
+                                document.getElementById("img-resume").src = "./assets/img/menu/resume.png";
+                            }
+                        </script>
+
+                        <!-- start menu block (portfolio) -->
+                        <a href="portfolio.html" class="menu-li">
+                            <!-- img menu block -->
+                            <span class="foto">
+                                <img id=img-portfolio onmouseover="gifImgPortfolio()" onmouseout="normalImgPortfolio()" src="./assets/img/menu/portfolio.png" alt="Portfolio" />
+                            </span>
+                            <!-- name menu block -->
+                            <span class="name">Portfolio</span>
+                        </a>
+                        <!-- end menu block (portfolio) -->
+
+                        <script>
+                            function gifImgPortfolio() {
+                                document.getElementById("img-portfolio").src = "./assets/img/menu/portfolio.gif";
+                            }
+
+                            function normalImgPortfolio() {
+                                document.getElementById("img-portfolio").src = "./assets/img/menu/portfolio.png";
+                            }
+                        </script>
+
+                        <!-- start menu block (blog) -->
+                        <a href="blog/blog-1.html" class="menu-li">
+                            <!-- img menu block -->
+                            <span class="foto">
+                                <img id=img-blog onmouseover="gifImgBlog()" onmouseout="normalImgBlog()" src="./assets/img/menu/blog.png" alt="Blog" />
+                            </span>
+                            <!-- name menu block -->
+                            <span class="name">Blog</span>
+                        </a>
+                        <!-- end menu block (portfolio) -->
+
+                        <script>
+                            function gifImgBlog() {
+                                document.getElementById("img-blog").src = "./assets/img/menu/blog.gif";
+                            }
+
+                            function normalImgBlog() {
+                                document.getElementById("img-blog").src = "./assets/img/menu/blog.png";
+                            }
+                        </script>
+
+                        <!-- start menu block (contact) -->
+                        <a href="contact.html" class="menu-li">
+                            <!-- img menu block -->
+                            <span class="foto">
+                                <img id=img-contact onmouseover="gifImgContact()" onmouseout="normalImgContact()" src="./assets/img/menu/contact.png" alt="Contact" />
+                            </span>
+                            <!-- name menu block -->
+                            <span class="name">Contact</span>
+                        </a>
+                        <!-- end menu block (contact) -->
+
+                        <script>
+                            function gifImgContact() {
+                                document.getElementById("img-contact").src = "./assets/img/menu/contact.gif";
+                            }
+
+                            function normalImgContact() {
+                                document.getElementById("img-contact").src = "./assets/img/menu/contact.png";
+                            }
+                        </script>
+
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </nav>
+        <!-- End Menu section -->
+
+        <!-- Start Footer section -->
+        <footer class="footer">
+            <!-- start container -->
+            <div class="container" style="text-align: center;">
+                <!-- start row -->
+                <div class="row">
+                    <!-- start email -->
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <span class="ukie-icons"><i class="fa fa-paper-plane"></i></span> contact@caz-dev.com
+                    </div>
+                    <!-- end email -->
+                    <!-- start address -->
+                    <div class="col-xs-12 col-sm-6 col-lg-3" style="left: -26px">
+                        <span class="ukie-icons"><i class="fa fa-map-marker"></i></span> Sydney, NSW
+                    </div>
+                    <!-- end address -->
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                    </div>
+                    <!-- start Copyright -->
+                    <div class="col-xs-12 col-sm-6 col-lg-3 text-right">
+                        <span class="copyright">Copyright © 2019 All right reserved</span>
+                    </div>
+                    <!-- end Copyright -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </footer>
+        <!-- End Footer section -->
+
+    </div>
+
+    <!-- Scroll to Top -->
+    <a href="#" class="btn hover-animate scrollToTop"><i class="fa fa-angle-up"></i></a>
+    <!-- End Scroll to Top -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js" type="text/javascript"></script>
+    <script src="assets/js/scripts.js" type="text/javascript"></script>
+</body>
+
+</html>

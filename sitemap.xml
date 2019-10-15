@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://caz-dev.com/</loc>
+  <lastmod>2019-06-18T06:56:06+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://caz-dev.com/profile.html</loc>
+  <lastmod>2019-06-18T06:56:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://caz-dev.com/resume.html</loc>
+  <lastmod>2019-06-18T06:56:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://caz-dev.com/portfolio.html</loc>
+  <lastmod>2019-06-18T06:56:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://caz-dev.com/blog/blog-1.html</loc>
+  <lastmod>2019-06-18T10:37:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://caz-dev.com/contact.html</loc>
+  <lastmod>2019-06-18T06:56:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://caz-dev.com/index.html</loc>
+  <lastmod>2019-06-18T06:56:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://caz-dev.com/assets/files/Chaz_L_Resume.docx</loc>
+  <lastmod>2019-06-18T06:56:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://caz-dev.com/blog/posts/post-1-quad.html</loc>
+  <lastmod>2019-06-18T07:01:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://caz-dev.com/blog/posts/post-2-narwhals.html</loc>
+  <lastmod>2019-06-18T07:01:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://caz-dev.com/blog/posts/post-3-tyger.html</loc>
+  <lastmod>2019-06-18T07:01:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://caz-dev.com/blog/blog-2.html</loc>
+  <lastmod>2019-06-18T07:12:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://caz-dev.com/blog/posts/post-4-cpass.html</loc>
+  <lastmod>2019-06-18T07:02:00+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

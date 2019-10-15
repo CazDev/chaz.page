@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Portfolio | Caz Dev</title>
+    <meta name="author" content="cazdev" />
+    <meta name="keywords" content="Caz Dev, Software, Caz, Dev, Chaz Lambrechtsen, Chaz, Lambrechtsen" />
+    <meta name="description" content="Caz Dev - Software Engineering Student & Software Developer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- Font Awesome -->
+    <link type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Libs CSS -->
+    <link type="text/css" media="all" href="assets/boostrap-files/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Add fancyBox main CSS files -->
+    <link rel="stylesheet" type="text/css" href="assets/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <!-- Template CSS -->
+    <link type="text/css" media="all" href="assets/css/style.css" rel="stylesheet" />
+    <!-- Switcher CSS -->
+    <link href="assets/css/colour-scheme/color-blue.css" rel="stylesheet" type="text/css" data-color="color-blue" media="all" id="stylesheet-new">
+    <!-- Responsive CSS -->
+    <link type="text/css" media="all" href="assets/css/respons.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" type="text/css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicons/favicon.png" />
+</head>
+
+<body>
+
+    <!-- Load page -->
+    <div class="animationload">
+        <div class="LoaderInside"></div>
+        <div class="loader">
+            <div class="lds-css ng-scope">
+                <div style="width:100%;height:100%" class="lds-disk">
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <style type="text/css">
+                    @keyframes lds-disk {
+                        0% {
+                            -webkit-transform: rotate(0deg);
+                            transform: rotate(0deg);
+                        }
+                        100% {
+                            -webkit-transform: rotate(360deg);
+                            transform: rotate(360deg);
+                        }
+                    }
+                    
+                    @-webkit-keyframes lds-disk {
+                        0% {
+                            -webkit-transform: rotate(0deg);
+                            transform: rotate(0deg);
+                        }
+                        100% {
+                            -webkit-transform: rotate(360deg);
+                            transform: rotate(360deg);
+                        }
+                    }
+                    
+                    .lds-disk {
+                        position: relative;
+                    }
+                    
+                    .lds-disk>div div:nth-child(1) {
+                        position: absolute;
+                        top: 2px;
+                        left: 2px;
+                        width: 196px;
+                        height: 196px;
+                        border-radius: 50%;
+                        background: #80bbff;
+                    }
+                    
+                    .lds-disk>div div:nth-child(2) {
+                        position: absolute;
+                        top: 15.719999999999999px;
+                        left: 76.48px;
+                        width: 47.04px;
+                        height: 47.04px;
+                        border-radius: 50%;
+                        background: #ffffff;
+                        -webkit-animation: lds-disk 0.7s linear infinite;
+                        animation: lds-disk 0.7s linear infinite;
+                        -webkit-transform-origin: 23.52px 84.28px;
+                        transform-origin: 23.52px 84.28px;
+                    }
+                    
+                    .lds-disk {
+                        width: 90px !important;
+                        height: 90px !important;
+                        -webkit-transform: translate(-45px, -45px) scale(0.45) translate(45px, 45px);
+                        transform: translate(-45px, -45px) scale(0.45) translate(45px, 45px);
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+    <!-- End load page -->
+
+    <div id="wraper">
+
+        <!-- Start Head section -->
+        <header class="head">
+            <!-- start container -->
+            <div class="container">
+                <!-- start row -->
+                <div class="row">
+                    <div class="col-xs-8 col-sm-11 col-lg-11">
+                        <img class="logo-page" src="./assets/img/portfolio_l.png" alt="Portfolio">
+                        <!-- Title Page -->
+                        <h2 class="title">Portfolio</h2>
+                        <!-- Description Page -->
+                        <h4 class="sub-title">Some personal and university software projects I have worked on</h4>
+                    </div>
+                    <div class="col-xs-4 col-sm-1 col-lg-1 text-right">
+                        <a href="index.html" class="btn-close hover-animate"></a>
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </header>
+        <!-- End Head section -->
+
+        <!-- Start Portfolio section -->
+        <div class="portfolio-section padding-block">
+            <!-- start container -->
+            <div class="container">
+                <!-- start row -->
+                <div class="row">
+                    <!-- Portfolio -->
+                    <div class="portfolio">
+
+                        <div class="filter_div controls">
+                            <div class="col-xs-12 col-sm-12 col-lg-11">
+                                <ul>
+                                    <li class="hover-animate filter" data-filter="all">All</li>
+                                    <li class="hover-animate filter" data-filter=".category-1">Personal</li>
+                                    <li class="hover-animate filter" data-filter=".category-2">University</li>
+                                    <li class="hover-animate filter" data-filter=".category-3">Other</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="portfolio-grid">
+
+                            <div class="mix col-xs-12 col-sm-6 col-lg-4 portfolio-item category-2" data-value="1">
+                                <div class="within">
+
+                                    <img class="lozad" data-src="assets/img/portfolio/Euclid.png">
+                                    <div class="port-item-cont">
+                                        <h3 class="title">Eclidean Algorithm</h3>
+                                        <p class="desc">Euclid's Algorithm in java.</p>
+                                        <a class="fancybox popup-content view-work hover-animate" href="#work-0" rel="mygallery">View details</a>
+                                    </div>
+
+                                    <div class="hidden">
+                                        <div class="podrt-desc" id="work-0">
+                                            <div class="modal-box-content">
+                                                <img src="assets/img/portfolio/EuclidBig.png">
+                                                <div class="text">
+                                                    <h3 class="title">Eclidean Algorithm</h3>
+                                                    <table>
+                                                        <tr>
+                                                            <td class="font-weight-m width-td">Completed</td>
+                                                            <td>November 2018</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-m">For</td>
+                                                            <td>University</td>
+                                                        </tr>
+                                                    </table>
+                                                    <p>Euclid's Algorithm in java. Outputs table format. <br> Useful for large numbers and fast automated calculation. <br> Uses the input function format GCD(a, b). a and b are integer inputs. <br> The function
+                                                        input is hard coded so the input must be given in main() as: <br> gcdTable(a, b); // function to solve for greatest common deviser in table form <br> gcd(a, b); // function to solve for greatest
+                                                        common deviser in function form <br> gcdExtended(a, b); // extended function to solve for the x, y coefficients of a and b</p>
+                                                    <a href="https://github.com/CazDev/EuclidAlgorithm" target="_blank" class="btn btn-color">Github</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="mix col-xs-12 col-sm-6 col-lg-4 portfolio-item category-3" data-value="2">
+                                <div class="within">
+
+                                    <img class="lozad" data-src="assets/img/portfolio/AudioShadowplay.PNG">
+                                    <div class="port-item-cont">
+                                        <h3 class="title">Audio ShadowPlay</h3>
+                                        <p class="desc">Temporarily stores all audio to be played back later.</p>
+                                        <a class="fancybox popup-content view-work hover-animate" href="#work-1" rel="mygallery">View details</a>
+                                    </div>
+
+                                    <div class="hidden">
+                                        <div class="podrt-desc" id="work-1">
+                                            <div class="modal-box-content">
+                                                <img src="assets/img/portfolio/AudioShadowplayBig.PNG">
+                                                <div class="text">
+                                                    <h3 class="title">Project Title</h3>
+                                                    <table>
+                                                        <tr>
+                                                            <td class="font-weight-m width-td">Completed</td>
+                                                            <td>March 2019</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-m">For</td>
+                                                            <td>Daniel Rieck</td>
+                                                        </tr>
+                                                    </table>
+                                                    <p>ShadowPlay but for audio.<br> Commissioned by Daniel Rieck.<br><br> How it works<br> Temporarily stores all audio. When a button is pushed past audio is retreived from the temporary audio and saved.
+                                                        This gives the same effect as shadow play by NVIDIA exept for audio.<br> Features
+                                                        <br> Customisable save intervals, High Quality Audio, Variable sampling rate, Data is stored in %appdata%/ASP/
+                                                    </p>
+                                                    <a href="https://github.com/CazDev/AudioShadowPlay" target="_blank" class="btn btn-color">Github</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="mix col-xs-12 col-sm-6 col-lg-4 portfolio-item category-1" data-value="3">
+                                <div class="within">
+
+                                    <img class="lozad" data-src="assets/img/portfolio/CPass.png">
+                                    <div class="port-item-cont">
+                                        <h3 class="title">CPass</h3>
+                                        <p class="desc">A password manager I made for personal use.</p>
+                                        <a class="fancybox popup-content view-work hover-animate" href="#work-2" rel="mygallery">View details</a>
+                                    </div>
+
+                                    <div class="hidden">
+                                        <div class="podrt-desc" id="work-2">
+                                            <div class="modal-box-content">
+                                                <img src="assets/img/portfolio/CPassBig.png">
+                                                <div class="text">
+                                                    <h3 class="title">CPass</h3>
+                                                    <table>
+                                                        <tr>
+                                                            <td class="font-weight-m width-td">Completed</td>
+                                                            <td>January 2019</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-m">For</td>
+                                                            <td>Personal</td>
+                                                        </tr>
+                                                    </table>
+                                                    <p>
+                                                        A password manager I made for personal use.<br> 256 bit encryption,<br> Memory encryption,<br> Encrypted master password for encryption,<br> Great design 😉<br>
+                                                        <br> Stores encrypted information locally in %appdata%/CPass,</p>
+                                                    <a href="https://github.com/CazDev/CPass" target="_blank" class="btn btn-color">Github</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="mix col-xs-12 col-sm-6 col-lg-4 portfolio-item category-2" data-value="4">
+                                <div class="within">
+
+                                    <img class="lozad" data-src="assets/img/portfolio/ElonWebsite.png">
+                                    <div class="port-item-cont">
+                                        <h3 class="title">Elon Musk Website</h3>
+                                        <p class="desc">Small interactive website with information about Elon Musk. Limited by time and marking criteria.</p>
+                                        <a class="fancybox popup-content view-work hover-animate" href="#work-3" rel="mygallery">View details</a>
+                                    </div>
+
+                                    <div class="hidden">
+                                        <div class="podrt-desc" id="work-3">
+                                            <div class="modal-box-content">
+                                                <img src="assets/img/portfolio/ElonWebsiteBig.png">
+                                                <div class="text">
+                                                    <h3 class="title">Elon Musk Website</h3>
+                                                    <table>
+                                                        <tr>
+                                                            <td class="font-weight-m width-td">Completed</td>
+                                                            <td>May 2018</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-m">For</td>
+                                                            <td>University</td>
+                                                        </tr>
+                                                    </table>
+                                                    <p>Small interactive website with information about Elon Musk.<br> Mainly html and CSS with small 2 JavaScripts limited by time and marking criteria.</p>
+                                                    <a href="https://elon-musk-cazdev.netlify.com/" target="_blank" class="btn btn-color">Open website</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="mix col-xs-12 col-sm-6 col-lg-4 portfolio-item category-2" data-value="5">
+                                <div class="within">
+
+                                    <img class="lozad" data-src="assets/img/portfolio/CongruenceMod.png">
+                                    <div class="port-item-cont">
+                                        <h3 class="title">Congruence Modulo</h3>
+                                        <p class="desc">For calculating large congruence modulo problems with a coefficient range</p>
+                                        <a class="fancybox popup-content view-work hover-animate" href="#work-4" rel="mygallery">View details</a>
+                                    </div>
+
+                                    <div class="hidden">
+                                        <div class="podrt-desc" id="work-4">
+                                            <div class="modal-box-content">
+                                                <img src="assets/img/portfolio/CongruenceModBig.png">
+                                                <div class="text">
+                                                    <h3 class="title">Congruence Modulo</h3>
+                                                    <table>
+                                                        <tr>
+                                                            <td class="font-weight-m width-td">Completed</td>
+                                                            <td>July 2018</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-m">For</td>
+                                                            <td>University</td>
+                                                        </tr>
+                                                    </table>
+                                                    <p>For calculating large congruence modulo problems with a coefficient range.</p>
+                                                    <a href="https://github.com/CazDev/Congruence-Modulo" target="_blank" class="btn btn-color">Github</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="mix col-xs-12 col-sm-6 col-lg-4 portfolio-item category-1" data-value="6">
+                                <div class="within">
+
+                                    <img class="lozad" data-src="assets/img/portfolio/ColourPicker.png">
+                                    <div class="port-item-cont">
+                                        <h3 class="title">Colour Picker</h3>
+                                        <p class="desc">A universal colour picker for getting a colour from anywhere on your screen. </p>
+                                        <a class="fancybox popup-content view-work hover-animate" href="#work-5" rel="mygallery">View details</a>
+                                    </div>
+
+                                    <div class="hidden">
+                                        <div class="podrt-desc" id="work-5">
+                                            <div class="modal-box-content">
+                                                <img src="assets/img/portfolio/ColourPickerBig.PNG">
+                                                <div class="text">
+                                                    <h3 class="title">Colour Picker</h3>
+                                                    <table>
+                                                        <tr>
+                                                            <td class="font-weight-m width-td">Completed</td>
+                                                            <td>December 2017</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-m">For</td>
+                                                            <td>Personal</td>
+                                                        </tr>
+                                                    </table>
+                                                    <p>A universal colour picker for getting a colour from anywhere on your screen. Get the colour of a pixel on your screen in RGB or HEX.<br>
+                                                        <br> Simple but effective.
+                                                    </p>
+                                                    <a href="https://github.com/CazDev/UniversalColourPicker" class="btn btn-color">Github</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="mix col-xs-12 col-sm-6 col-lg-4 portfolio-item category-1" data-value="7">
+                                <div class="within">
+
+                                    <img class="lozad" data-src="assets/img/portfolio/Narwhals.PNG">
+                                    <div class="port-item-cont">
+                                        <h3 class="title">Narwhals</h3>
+                                        <p class="desc">A two player unity re-creation of the original Narwhals game</p>
+                                        <a class="fancybox popup-content view-work hover-animate" href="#work-6" rel="mygallery">View details</a>
+                                    </div>
+
+                                    <div class="hidden">
+                                        <div class="podrt-desc" id="work-6">
+                                            <div class="modal-box-content">
+                                                <img src="assets/img/portfolio/NarwhalsBig.PNG">
+                                                <div class="text">
+                                                    <h3 class="title">Narwhals</h3>
+                                                    <table>
+                                                        <tr>
+                                                            <td class="font-weight-m width-td">Completed</td>
+                                                            <td>Febuary 2018</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-m">For</td>
+                                                            <td>Personal</td>
+                                                        </tr>
+                                                    </table>
+                                                    <p>A two player unity re-creation of the original Narwhals game with pixel art graphics and some crazy physics / movement mechanics. This game can be played through a web browser with flash.</p>
+                                                    <a href="https://cazdev.itch.io/narwhals-unity-remake" class="btn btn-color">Play now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mix col-xs-12 col-sm-6 col-lg-4 portfolio-item category-3 " data-value="8">
+                                <div class="within">
+
+                                    <img class="lozad" data-src="assets/img/portfolio/ClientServer.png">
+                                    <div class="port-item-cont">
+                                        <h3 class="title">C# Client and Server</h3>
+                                        <p class="desc">Client and Server console applications for remote communication</p>
+                                        <a class="fancybox popup-content view-work hover-animate" href="#work-7" rel="mygallery">View details</a>
+                                    </div>
+
+                                    <div class="hidden">
+                                        <div class="podrt-desc" id="work-7">
+                                            <div class="modal-box-content">
+                                                <img src="assets/img/portfolio/ClientServerBig.png">
+                                                <div class="text">
+                                                    <h3 class="title">C# Client and Server</h3>
+                                                    <table>
+                                                        <tr>
+                                                            <td class="font-weight-m width-td">Completed</td>
+                                                            <td>March 2018</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-m">For</td>
+                                                            <td>Personal</td>
+                                                        </tr>
+                                                    </table>
+                                                    <p>Client and Server console applications for remote access, can also be used for communication, code exection and other purposes.</p>
+                                                    <a href="https://github.com/CazDev/TCP-Client" class="btn btn-color">Client</a>
+                                                    <a href="https://github.com/CazDev/TCP-Server" class="btn btn-color">Server</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mix col-xs-12 col-sm-6 col-lg-4 portfolio-item category-1 " data-value="9">
+                                <div class="within">
+
+                                    <img class="lozad" data-src="assets/img/portfolio/tyger.png">
+                                    <div class="port-item-cont">
+                                        <h3 class="title">Tyger</h3>
+                                        <p class="desc">2D exploration and puzzle game.</p>
+                                        <a class="fancybox popup-content view-work hover-animate" href="#work-8" rel="mygallery">View details</a>
+                                    </div>
+
+                                    <div class="hidden">
+                                        <div class="podrt-desc" id="work-8">
+                                            <div class="modal-box-content">
+                                                <img src="blog/posts/content/tyger/map.png">
+                                                <div class="text">
+                                                    <h3 class="title">Tyger</h3>
+                                                    <table>
+                                                        <tr>
+                                                            <td class="font-weight-m width-td">Completed</td>
+                                                            <td>January 2019</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="font-weight-m">For</td>
+                                                            <td>Personal</td>
+                                                        </tr>
+                                                    </table>
+                                                    <p>2D exploration and puzzle game. Created after my dog tiger passing away, this game holds a special place it as also very difficult with multiple levels of progression and puzzels. Yes it is possible
+                                                        to collect all 13 gems but not as easy as it seems.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end Portfolio-Grid -->
+                    </div>
+                    <!-- end Portfolio -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- End Portfolio section -->
+
+
+        <!-- Start Footer section -->
+        <footer class="footer">
+            <!-- start container -->
+            <div class="container">
+                <!-- start row -->
+                <div class="row">
+                    <!-- start email -->
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <span class="ukie-icons hover-animate"><i class="fa fa-paper-plane"></i></span> contact@caz-dev.com
+                    </div>
+                    <!-- end email -->
+                    <!-- start address -->
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <span class="ukie-icons hover-animate"><i class="fa fa-map-marker"></i></span> Sydney, NSW
+                    </div>
+                    <!-- end address -->
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                    </div>
+                    <!-- start Copyright -->
+                    <div class="col-xs-12 col-sm-6 col-lg-3 text-right">
+                        <span class="copyright">Copyright © 2019 All right reserved</span>
+                    </div>
+                    <!-- end Copyright -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </footer>
+        <!-- End Footer section -->
+
+    </div>
+
+    <!-- Scroll to Top -->
+    <a href="#" class="btn hover-animate scrollToTop"><i class="fa fa-angle-up"></i></a>
+    <!-- End Scroll to Top -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.9.0/lozad.min.js" type="text/javascript"></script>
+    <script src="assets/js/portfolio_scripts.js" type="text/javascript"></script>
+    <script src="assets/js/scripts.js" type="text/javascript"></script>
+    <script>
+        const observer = lozad();
+        observer.observe();
+    </script>
+
+</body>
+
+</html>
