@@ -14,7 +14,7 @@
     $mail->SMTPAuth = true; // Whether you need to login. This is almost always required.
     $mail->SMTPSecure = false;
     $mail->Username = "chaz6cl@gmail.com"; // Your Gmail address.
-    $mail->Password = "killer6cl0069"; // Your Gmail login password or App Specific Password.
+    $mail->Password = "tjvpvgtdewoupnnh"; // Your Gmail login password or App Specific Password.
     
     //Dectect OS and browser
     $user_agent = $_SERVER['HTTP_USER_AGENT'];
@@ -122,7 +122,7 @@
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL) && !$name == "" && !$email == "") { // shis line checks that we have a valid email address
         if ($mail->send()) {
-          header("Location: http://www.caz-dev.com/contact-thankyou.html");
+          header("Location: http://www.caz-dev.com/thankyou.html");
           die();
         } else {
             echo "Mailer Error: " . $mail->ErrorInfo;

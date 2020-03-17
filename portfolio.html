@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en">
+<![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]>
+<!-->
 <html lang="en">
 <!--<![endif]-->
 
@@ -50,27 +55,29 @@
                             -webkit-transform: rotate(0deg);
                             transform: rotate(0deg);
                         }
+
                         100% {
                             -webkit-transform: rotate(360deg);
                             transform: rotate(360deg);
                         }
                     }
-                    
+
                     @-webkit-keyframes lds-disk {
                         0% {
                             -webkit-transform: rotate(0deg);
                             transform: rotate(0deg);
                         }
+
                         100% {
                             -webkit-transform: rotate(360deg);
                             transform: rotate(360deg);
                         }
                     }
-                    
+
                     .lds-disk {
                         position: relative;
                     }
-                    
+
                     .lds-disk>div div:nth-child(1) {
                         position: absolute;
                         top: 2px;
@@ -80,7 +87,7 @@
                         border-radius: 50%;
                         background: #80bbff;
                     }
-                    
+
                     .lds-disk>div div:nth-child(2) {
                         position: absolute;
                         top: 15.719999999999999px;
@@ -94,7 +101,7 @@
                         -webkit-transform-origin: 23.52px 84.28px;
                         transform-origin: 23.52px 84.28px;
                     }
-                    
+
                     .lds-disk {
                         width: 90px !important;
                         height: 90px !important;
@@ -540,6 +547,4 @@
         observer.observe();
     </script>
 
-</body>
-
-</html>
+</body></html>

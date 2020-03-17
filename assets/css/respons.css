@@ -233,7 +233,7 @@ Author:	Ukieweb
 
     .testimonials .foto, .testimonials .col-sm-5 p, .testimonials h4 {
         float: none;
-        text-align: center;
+        text-align: left;
         margin-right: 0;
     }
 
@@ -381,6 +381,12 @@ Author:	Ukieweb
 
     .testimonials .col-xs-12 table {
         margin-top: 25px;
+    }
+    
+    .testimonials .foto, .testimonials .col-sm-5 p, .testimonials h4 {
+        float: none;
+        text-align: center;
+        margin-right 100px;
     }
 
     .today {

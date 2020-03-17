@@ -69,8 +69,8 @@ $(document).ready(function () {
      ----------------------------------------------------------------------
      */
     
-    $(".loader").delay(400).fadeOut();
-    $(".animationload").delay(400).fadeOut("fast");
+    $(".loader").delay(50).fadeOut();
+    $(".animationload").delay(50).fadeOut("fast");
 
     /*
      ----------------------------------------------------------------------

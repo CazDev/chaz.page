@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en">
+<![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]>
+<!-->
 <html lang="en">
 <!--<![endif]-->
 
@@ -13,24 +18,8 @@
     <meta name="keywords" content="Caz Dev, Software, Caz, Dev, Chaz Lambrechtsen, Chaz, Lambrechtsen" />
     <meta name="description" content="Caz Dev - Software Engineering Student & Software Developer" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    
-	<script>
-	 /*
-     ----------------------------------------------------------------------
-     Colour Scheme
-     ----------------------------------------------------------------------
-     */
-	const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
-	const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
 
-	if(isLightMode) activateLightMode();
-		
-	function activateLightMode() {
-		window.location.replace("https://caz-dev.com/");
-	}
-	</script>
-	
-	<!-- Font Awesome -->
+    <!-- Font Awesome -->
     <link type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <!-- Libs CSS -->
     <link type="text/css" media="all" href="assets/boostrap-files/css/bootstrap.css" rel="stylesheet" />
@@ -47,12 +36,12 @@
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- Preload loading icon-->
-    <img src="./assets/img/favicons/favicon.png" width="0" height="0"  style="display: block;"/>
-    <img src="./assets/img/menu/profile.gif" width="0" height="0"  style="display: block;"/>
-    <img src="./assets/img/menu/resume.gif" width="0" height="0"  style="display: block;"/>
-    <img src="./assets/img/menu/portfolio.gif" width="0" height="0"  style="display: block;"/>
-    <img src="./assets/img/menu/blog.gif" width="0" height="0"  style="display: block;"/>
-    <img src="./assets/img/menu/contact.gif" width="0" height="0"  style="display: block;"/>
+    <img src="./assets/img/favicons/favicon.png" width="0" height="0" style="display: block;" />
+    <img src="./assets/img/menu/profile.gif" width="0" height="0" style="display: block;" />
+    <img src="./assets/img/menu/resume.gif" width="0" height="0" style="display: block;" />
+    <img src="./assets/img/menu/portfolio.gif" width="0" height="0" style="display: block;" />
+    <img src="./assets/img/menu/blog.gif" width="0" height="0" style="display: block;" />
+    <img src="./assets/img/menu/contact.gif" width="0" height="0" style="display: block;" />
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/favicons/favicon.png" />
 
@@ -76,27 +65,29 @@
                             -webkit-transform: rotate(0deg);
                             transform: rotate(0deg);
                         }
+
                         100% {
                             -webkit-transform: rotate(360deg);
                             transform: rotate(360deg);
                         }
                     }
-                    
+
                     @-webkit-keyframes lds-disk {
                         0% {
                             -webkit-transform: rotate(0deg);
                             transform: rotate(0deg);
                         }
+
                         100% {
                             -webkit-transform: rotate(360deg);
                             transform: rotate(360deg);
                         }
                     }
-                    
+
                     .lds-disk {
                         position: relative;
                     }
-                    
+
                     .lds-disk>div div:nth-child(1) {
                         position: absolute;
                         top: 2px;
@@ -106,7 +97,7 @@
                         border-radius: 50%;
                         background: #80bbff;
                     }
-                    
+
                     .lds-disk>div div:nth-child(2) {
                         position: absolute;
                         top: 15.719999999999999px;
@@ -120,7 +111,7 @@
                         -webkit-transform-origin: 23.52px 84.28px;
                         transform-origin: 23.52px 84.28px;
                     }
-                    
+
                     .lds-disk {
                         width: 90px !important;
                         height: 90px !important;
@@ -131,6 +122,7 @@
             </div>
         </div>
     </div>
+     
     <!-- End load page -->
 
     <div id="wraper">
@@ -145,7 +137,7 @@
                         <!-- Your foto -->
                         <div class="foto">
                             <!-- for man -->
-                            <img src="./assets/img/photo.png" alt="Photo">
+                            <img src="./assets/img/photo.webp" alt="Photo">
                             <!-- for women -->
                             <!-- <img src="./assets/img/photo_female.png" alt="Photo"> -->
                         </div>
@@ -336,6 +328,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js" type="text/javascript"></script>
     <script src="assets/js/scripts.js" type="text/javascript"></script>
-</body>
-
-</html>
+</body></html>

@@ -517,7 +517,7 @@ a.icons-menu-button:focus,
     Footer section
 --------------------*/
 .footer {
-    line-height: 36px;
+    line-height: 70px;
     padding: 17px 0;
     border-top-width: 1px;
     border-top-style: solid;
@@ -1041,6 +1041,7 @@ a.icons-menu-button:focus,
     top: 0;
     right: -32px;
     z-index: 8040;
+    -webkit-filter: invert(100%);
 }
 
 #fancybox-loading, .fancybox-close {
