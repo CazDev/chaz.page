@@ -10,6 +10,8 @@ $(document).ready(function () {
     /* Honeypot check */
     var form = document.getElementById('form');
     var pots = honey(form);
+    
+    honey.all();
 
     // set acceptable minimum amount of time for form completion
     pots.config({ time : 3 });
