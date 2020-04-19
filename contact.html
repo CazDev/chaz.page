@@ -144,7 +144,7 @@
                             <table>
                                 <tr>
                                     <td class="font-weight-m" style="vertical-align: top;">E-mail</td>
-                                    <td><a href="mailto:contact@caz-dev.com">contact@caz-dev.com</a>
+                                    <td><a href="mailto:contact@caz-dev.com">cont&#97;ct&#64;&#99;&#97;z&#45;dev.&#99;&#111;m</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -168,10 +168,16 @@
                         <h3 class="title title-contact">Contact form</h3>
                         <!-- Start Contact Form -->
                         <div class="contact-form">
-                            <form action="https://getsimpleform.com/messages?form_api_token=94d802a177c8a9a25808d7465fe45c16" method="post">
+                            <form id="form" action="https://getsimpleform.com/messages?form_api_token=94d802a177c8a9a25808d7465fe45c16" method="post">
 
                                <input type='hidden' name='redirect_to' value='https://www.caz-dev.com/thankyou.html' />
                                
+                                <!-- Honeypot fields -->
+                                <input type="text" id="website" name="website" placeholder="Website" />	
+                                <input type="text" id="email" name="email" placeholder="Email" />	
+                                <input type="text" id="message" name="message" placeholder="Message" />
+                                
+                                <!-- Real fields -->
                                 <input type="text" id="user-name" name="user-name" value="" placeholder="Name" />
                                 <input type="email" id="user-email" name="user-email" value="" placeholder="Email" />
                                 <textarea id="user-message" name="user-message" placeholder="Message"></textarea>
@@ -233,9 +239,9 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js" type="text/javascript"></script>
-    <script src="assets/js/scripts.js" type="text/javascript"></script>
     <script src="assets/js/contact_scripts.js" type="text/javascript"></script>
-
+    <script src="//cdn.jsdelivr.net/honeyjs/1.1.0/honey.min.js" type="text/javascript"></script>
+    <script src="assets/js/scripts.js" type="text/javascript"></script>
 </body>
 
 </html>

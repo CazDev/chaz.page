@@ -614,7 +614,7 @@ a.icons-menu-button:focus,
 --------------------*/
 
 .animationload {
-    background: #dcf7ff url("../../img/back.wepb") no-repeat center center fixed; 
+    background: #dcf7ff url("../../img/back.webp") no-repeat center center fixed; 
 }
 
 .LoaderInside {

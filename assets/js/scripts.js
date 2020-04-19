@@ -249,6 +249,4 @@ $(document).ready(function () {
         $('.style-contact-form').toggleClass('style-off-form');
     });
 
-    $(".ratyli").ratyli();
-
 }); // End $(document).ready(function(){
