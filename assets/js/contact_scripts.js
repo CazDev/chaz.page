@@ -14,9 +14,9 @@ $(document).ready(function () {
     }
     
     function honeyPotIsEmpty() {
-        var a = document.getElementById('website').textContent;
-        var b = document.getElementById('email').textContent;
-        var c = document.getElementById('message').textContent;
+        var a = document.getElementById('website').value;
+        var b = document.getElementById('email').value;
+        var c = document.getElementById('message').value;
         if (a == "" && b == "" && c == "") {
             return true;
         } else {

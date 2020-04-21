@@ -169,21 +169,7 @@
                         <!-- Start Contact Form -->
                         <div class="contact-form">
                            
-                           <script type="text/javascript">
-                            function honeyPotIsEmpty() {
-                            var a = document.getElementById('website').textContent;
-                            var b = document.getElementById('email').textContent;
-                            var c = document.getElementById('message').textContent;
-                            if (a == "" && b == "" && c == "") {
-                                return true;
-                            } else {
-                                alert("Sorry, you look like a robot.");
-                                return false;
-                                }
-                            }
-                            </script>
-                           
-                            <form id="contact-form" onsubmit="honeyPotIsEmpty();" action="https://getsimpleform.com/messages?form_api_token=94d802a177c8a9a25808d7465fe45c16" method="post">
+                            <form id="contact-form" action="https://getsimpleform.com/messages?form_api_token=94d802a177c8a9a25808d7465fe45c16" method="post">
 
                                <input type='hidden' name='redirect_to' value='https://www.caz-dev.com/thankyou.html' />
                                
