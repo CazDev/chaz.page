@@ -6,25 +6,23 @@ $(document).ready(function () {
      Forms
      ----------------------------------------------------------------------
      */
-    
-    /* Honeypot check */
-    var form = document.getElementById('form');
-    var pots = honey(form);
-    
-    honey.all();
-
-    // set acceptable minimum amount of time for form completion
-    pots.config({ time : 3 });
-
-    // set a name of empty-required input field
-    pots.name('website');
-    pots.name('email');
-    pots.name('message');
 
     /* Email validation */
     function valid_email_address(email) {
         var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
         return pattern.test(email);
+    }
+    
+    function honeyPotIsEmpty() {
+        var a = document.getElementById('website').textContent;
+        var b = document.getElementById('email').textContent;
+        var c = document.getElementById('message').textContent;
+        if (a == "" && b == "" && c == "") {
+            return true;
+        } else {
+            alert("Sorry, you look like a robot.");
+            return false;
+        }
     }
 
     /*
@@ -37,8 +35,7 @@ $(document).ready(function () {
         $("#user-status").val("yes");
     });
 
-    $("#contact-form").on('submit', function () {
-
+    $("#contact-form").on('submit', function () { /* Check information is valid */
 
         if (!valid_email_address($("#user-email").val()) || $("#user-name").val().length <= 2) {
 
@@ -50,53 +47,11 @@ $(document).ready(function () {
             }
 
         } else {
-
-            var data_of_form = $(this).serialize();
-
-            $.ajax({
-                url: 'assets/php/contact.php',
-                data: data_of_form,
-                type: 'POST',
-                success: function (data) {
-                    if (data == "success") {
-                        $("#user-name").val("");
-                        $("#user-email").val("");
-                        $("#user-message").val("");
-
-                        $(".info-message-form p").text("Message sent!");
-                        $(".info-message-form").addClass('success');
-                        setTimeout(
-                            function () {
-                                $(".info-message-form").removeClass('success');
-                                $(".info-message-form p").text("");
-                            }, 5000
-                        );
-                    } else {
-                        $(".info-message-form p").text("Error");
-                        $(".info-message-form").addClass('error');
-                        setTimeout(
-                            function () {
-                                $(".info-message-form").removeClass('error').fadeOut(500);
-                                $(".info-message-form p").text("");
-                            }, 5000
-                        );
-                    }
-                },
-                error: function () {
-                    alert("Error mail not sent");
-                    $(".info-message-form p").text("Error");
-                    $(".info-message-form").addClass('error');
-                    setTimeout(
-                        function () {
-                            $(".info-message-form").removeClass('error');
-                            $(".info-message-form p").text("");
-                        }, 5000
-                    );
-                }
-            });
-
+            if (honeyPotIsEmpty()) { /* Finally check honeypot is empty */
+                return true;
+            }
         }
-
+        
         return false;
     });
 
