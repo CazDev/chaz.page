@@ -17,7 +17,7 @@ $(document).ready(function () {
         var a = document.getElementById('website').value;
         var b = document.getElementById('email').value;
         var c = document.getElementById('message').value;
-        if (a == "" && b == "" && c == "1") {
+        if (a == "" && b == "" && c == "") {
             return true;
         } else {
             alert("Sorry, you look like a robot.");
