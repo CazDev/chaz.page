@@ -367,9 +367,7 @@ a.icons-menu-button:focus,
     border-color: #dfdfdf;
 }
 
-.contact-form #website,
-#email,
-#message {
+.contact-form #website, #email, #message, #liberal_emerald_pinstriped_eggs {
     display: none;
 }
 
