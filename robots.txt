@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://caz-dev.com/sitemap.xml
