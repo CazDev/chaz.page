@@ -1,2 +1,2 @@
-# CazDev.github.io
+# caz-dev.com
 Personal website
